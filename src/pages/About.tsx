@@ -46,7 +46,7 @@ const About = () => {
                 <span className="text-sm font-medium text-foreground">Linux Server</span>
               </div>
               <div src={kubeLogo}className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <img src="/src/assets/kube-logo.svg" alt="Kubernetes" className="h-12 w-12 object-contain" />
+                <img src={kubeLogo} alt="Kubernetes" className="h-12 w-12 object-contain" />
                 <span className="text-sm font-medium text-foreground">Kubernetes</span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
