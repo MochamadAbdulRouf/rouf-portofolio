@@ -106,7 +106,7 @@ const About = () => {
               </Link>
               <Link to="/posts" className="flex-1">
                 <Button variant="outline" size="lg" className="w-full">
-                  Read My Blog
+                  Read My Posts / Blog
                 </Button>
               </Link>
             </div>
