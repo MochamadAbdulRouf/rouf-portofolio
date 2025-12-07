@@ -32,6 +32,63 @@ const About = () => {
               I'm Mochamad Abdul Rouf, a Fresh Graduate specializing in DevOps and Cloud Infrastructure. 
               I am passionate about building scalable, reliable, and automated systems.
             </p>
+            <h2 className="text-2xl font-bold text-foreground mt-8 mb-6">Experience</h2>
+            
+            {/* Experience Timeline - Tambahkan experience baru di array ini */}
+            <div className="relative mb-8">
+              {/* Timeline line */}
+              <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-transparent" />
+              
+              <div className="space-y-8">
+                {[
+                  {
+                    company: "Jago Web Hosting Indonesia",
+                    role: "Wordpress Developer",
+                    period: "Jun 2025 - Nov 2025",
+                    location: "Special Region of Yogyakarta, Indonesia",
+                    description: [
+                      "Configuring end-to-end WordPress development projects using Divi & Elementor, including WooCommerce e-commerce websites and product data migration.",
+                      "Configuring and managing VPS servers",
+                      "Configuring domain and DNS management (A, CNAME, MX), custom domain settings, and hosting administration.",
+                      "Configuring server security with SSL certificates, HTTPS redirection, and Web Application Firewalls (WAF) such as ModSecurity.",
+                      "Optimizing server performance and resource usage to ensure stability and efficiency.",
+                      "Configuring CWP (Control Web Panel)",
+                      "Configuring cPanel",
+                    ],
+                  },
+                ].map((exp, index) => (
+                  <div key={index} className="relative pl-12">
+                    {/* Timeline dot */}
+                    <div className="absolute left-0 top-1 w-8 h-8 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center">
+                      <div className="w-3 h-3 rounded-full bg-primary" />
+                    </div>
+                    
+                    {/* Content */}
+                    <div className="pb-2">
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-2">
+                        <div>
+                          <h3 className="text-xl font-semibold text-foreground">{exp.company}</h3>
+                          <p className="text-primary font-medium">{exp.role}</p>
+                        </div>
+                        <div className="text-sm text-muted-foreground sm:text-right">
+                          <p className="font-medium">{exp.period}</p>
+                          <p>{exp.location}</p>
+                        </div>
+                      </div>
+                      <ul className="space-y-2 text-muted-foreground mt-3">
+                        {exp.description.map((item, i) => (
+                          <li key={i} className="flex items-baseline gap-2">
+                            <span className="text-primary/70 shrink-0">→</span>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">My Journey</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
               Throughout my academic journey and hands-on projects, I've developed a strong foundation in 
@@ -43,7 +100,7 @@ const About = () => {
             {/* Tech Stack Icons Grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 my-8">
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <img src={linuxlogo} alt="Linux Server" className="h-12 w-12 object-contain" />
+                <img src={linuxLogo} alt="Linux Server" className="h-12 w-12 object-contain" />
                 <span className="text-sm font-medium text-foreground">Linux Server</span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
@@ -52,11 +109,11 @@ const About = () => {
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
                 <img src={awsLogo} alt="Cloud (GCP/AWS)" className="h-12 w-12 object-contain" />
-                <span className="text-sm font-medium text-foreground text-center">AWS(Amazon Web Service)</span>
+                <span className="text-sm font-medium text-foreground text-center">AWS (Amazon Web Service)</span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
                 <img src={gcpLogo} alt="Cloud (GCP/AWS)" className="h-12 w-12 object-contain" />
-                <span className="text-sm font-medium text-foreground text-center">GCP(Google Cloud Platform)</span>
+                <span className="text-sm font-medium text-foreground text-center">GCP (Google Cloud Platform)</span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
                 <img src={dockerLogo} alt="Docker" className="h-12 w-12 object-contain" />
@@ -111,7 +168,7 @@ const About = () => {
               </Link>
               <Link to="/posts" className="flex-1">
                 <Button variant="outline" size="lg" className="w-full">
-                  Read My Posts / Blog
+                  Read My Blog
                 </Button>
               </Link>
             </div>
