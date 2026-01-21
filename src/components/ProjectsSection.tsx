@@ -147,7 +147,7 @@ const ProjectsSection = () => {
         "SportOn is a full-stack sports equipment buying and selling website designed to provide a fast, secure, and modern online shopping experience. The platform supports various sports product categories such as fitness, soccer, basketball, running, and outdoor sports.",
       techStack: ["React", "NextJS", "ExpressJS", "API", "MongoDB", "Vercel"],
       github:
-        "https://github.com/MochamadAbdulRouf/Terraform-AWS-GCP-IAC/tree/master/AWS/aws-terraform-ha-webapp",
+        "https://github.com/MochamadAbdulRouf/sporton-fe-vercel-deploy.git",
     },
   ];
 
