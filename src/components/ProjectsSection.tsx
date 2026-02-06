@@ -161,9 +161,10 @@ const ProjectsSection = () => {
         "Promtail",
         "Node Exporter",
         "Alert Manager",
+        "Docker",
       ],
       github:
-        "https://github.com/MochamadAbdulRouf/sporton-fe-vercel-deploy.git",
+        "https://github.com/MochamadAbdulRouf/grafana-loki-promtail-stack.git",
     },
   ];
 
