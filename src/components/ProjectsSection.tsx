@@ -149,6 +149,22 @@ const ProjectsSection = () => {
       github:
         "https://github.com/MochamadAbdulRouf/sporton-fe-vercel-deploy.git",
     },
+    {
+      title:
+        "Centralized Log Monitoring with Grafana, Loki, Promtail, Prometheus, and Alerts with Docker Containerization",
+      description:
+        "In a modern IT infrastructure, as a DevOps Engineer, you handle many servers that are used to run applications and services. Each server creates logs (such as system errors, application events, access records) and (CPU, Memory, Disk Space, etc.).",
+      techStack: [
+        "Grafana",
+        "Loki",
+        "Prometheus",
+        "Promtail",
+        "Node Exporter",
+        "Alert Manager",
+      ],
+      github:
+        "https://github.com/MochamadAbdulRouf/sporton-fe-vercel-deploy.git",
+    },
   ];
 
   return (
