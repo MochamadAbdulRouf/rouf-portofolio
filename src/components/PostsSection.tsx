@@ -351,7 +351,7 @@ const PostsSection = () => {
         "Learning how to approach the CKAD exam. Scenario-based questions are designed to be realistic and similar to real-world situations, in order to accelerate the goal of becoming a Certified Kubernetes Application Developer. I took the material from studying a course on Udemy.",
       date: "2026-02-06",
       readTime: "2 Jam",
-      tags: ["GCP", "Kubernetes", "DevOps", "Cloud"],
+      tags: ["Kubernetes", "DevOps"],
       links: [
         {
           platform: "github",
