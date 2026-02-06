@@ -1,16 +1,23 @@
 // import { Calendar, Clock, ArrowRight } from "lucide-react";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+  CardFooter,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { 
-  Calendar, 
-  Clock, 
-  ArrowRight, 
-  Github, 
-  FileText, 
+import {
+  Calendar,
+  Clock,
+  ArrowRight,
+  Github,
+  FileText,
   BookOpen,
   Database,
-  Newspaper 
+  Newspaper,
 } from "lucide-react";
 import { platform } from "os";
 
@@ -18,235 +25,341 @@ import { platform } from "os";
 const linkDetails = {
   github: {
     text: "View on GitHub",
-    Icon: Github
-  }, 
+    Icon: Github,
+  },
   medium: {
     text: "Read on Medium",
-    Icon: FileText
+    Icon: FileText,
   },
   blogger: {
     text: "Read on Blogger",
-    Icon: BookOpen
+    Icon: BookOpen,
   },
   drive: {
     text: "View Google Docs/Sheets",
-    Icon: Newspaper
+    Icon: Newspaper,
   },
   default: {
     text: "Read More",
-    Icon: ArrowRight
-  }
+    Icon: ArrowRight,
+  },
 };
 
 const PostsSection = () => {
   const posts = [
     {
-      title: "Deploy the Perpusku Laravel Application with Docker & Docker Compose",
-      excerpt: "Deploying the Perpusku Laravel application using Docker and Docker Compose for easy container management.",
+      title:
+        "Deploy the Perpusku Laravel Application with Docker & Docker Compose",
+      excerpt:
+        "Deploying the Perpusku Laravel application using Docker and Docker Compose for easy container management.",
       date: "2025-07-10",
       readTime: "2 Jam",
       tags: ["Docker", "DevOps", "Deployment"],
       links: [
-        { platform: 'medium', url: 'https://medium.com/@rouf08412/deploy-laravel-perpusku-dengan-docker-tutorial-lengkap-medium-style-86681792f198' },
-        { platform: 'blogger', url: 'https://mochabdulrouf.blogspot.com/2025/07/challenge-deploy-web-laravel-perpus.html' }
-      ]
+        {
+          platform: "medium",
+          url: "https://medium.com/@rouf08412/deploy-laravel-perpusku-dengan-docker-tutorial-lengkap-medium-style-86681792f198",
+        },
+        {
+          platform: "blogger",
+          url: "https://mochabdulrouf.blogspot.com/2025/07/challenge-deploy-web-laravel-perpus.html",
+        },
+      ],
     },
     {
       title: "AWS DevOps Module",
-      excerpt: "A comprehensive guide to building AWS DevOps modules that include Jenkins, Terraform, Docker, and Kubernetes. This project was carried out with my friends at KITS (IT Community of SMKN 1 NGLEGOK).",
+      excerpt:
+        "A comprehensive guide to building AWS DevOps modules that include Jenkins, Terraform, Docker, and Kubernetes. This project was carried out with my friends at KITS (IT Community of SMKN 1 NGLEGOK).",
       date: "2025-06-28",
       readTime: "6 jam",
       tags: ["AWS", "IaC", "Cloud", "DevOps"],
       links: [
-        { platform: 'blogger', url: 'https://mochabdulrouf.blogspot.com/2025/07/blog-post.html' }
-      ]
+        {
+          platform: "blogger",
+          url: "https://mochabdulrouf.blogspot.com/2025/07/blog-post.html",
+        },
+      ],
     },
     {
       title: "MTCNA Module: MikroTik Certified Network Associate",
-      excerpt: "A comprehensive guide to preparing for MTCNA certification with a focus on network configuration using MikroTik devices.",
+      excerpt:
+        "A comprehensive guide to preparing for MTCNA certification with a focus on network configuration using MikroTik devices.",
       date: "2024-04-21",
       readTime: "6 Jam",
       tags: ["Winbox", "Mikrotik", "Network"],
       links: [
-        { platform: 'blogger', url: 'https://mochabdulrouf.blogspot.com/2025/05/modul-mtcna-mochamad-abdul-rouf.html' }
-      ]
+        {
+          platform: "blogger",
+          url: "https://mochabdulrouf.blogspot.com/2025/05/modul-mtcna-mochamad-abdul-rouf.html",
+        },
+      ],
     },
     {
       title: "Debian Linux Server - System Administration Module",
-      excerpt: "System administration module for Debian Linux Server that covers installation, configuration, and management of server services.",
+      excerpt:
+        "System administration module for Debian Linux Server that covers installation, configuration, and management of server services.",
       date: "2024-03-21",
       readTime: "6 Jam",
       tags: ["Server", "Linux", "SystemAdministration"],
       links: [
-        { platform: 'blogger', url: 'https://mochabdulrouf.blogspot.com/2025/03/modul-debian-11-systemadministrator.html' }
-      ]
+        {
+          platform: "blogger",
+          url: "https://mochabdulrouf.blogspot.com/2025/03/modul-debian-11-systemadministrator.html",
+        },
+      ],
     },
     {
-      title: "Continuous Delivery with Jenkins in Kubernetes Engine GCP (Google Cloud Platform)",
-      excerpt: "Set up applications using Jenkins on Google Kubernetes Engine to automate the Continuous Delivery process.",
+      title:
+        "Continuous Delivery with Jenkins in Kubernetes Engine GCP (Google Cloud Platform)",
+      excerpt:
+        "Set up applications using Jenkins on Google Kubernetes Engine to automate the Continuous Delivery process.",
       date: "2025-08-29",
       readTime: "2 Jam",
       tags: ["Kubernetes", "GCP", "Jenkins", "CI/CD", "DevOps", "Cloud"],
       links: [
-        { platform: 'medium', url: 'https://medium.com/@rouf08412/continuous-delivery-with-jenkins-in-kubernetes-engine-7b3d37c40d72' }
-      ]
+        {
+          platform: "medium",
+          url: "https://medium.com/@rouf08412/continuous-delivery-with-jenkins-in-kubernetes-engine-7b3d37c40d72",
+        },
+      ],
     },
     {
       title: "Setup Jenkins With Kubernetes Engine GCP (Google Cloud Platform)",
-      excerpt: "Configuring Jenkins in Google Kubernetes Engine to help manage the CI/CD pipeline for applications.",
+      excerpt:
+        "Configuring Jenkins in Google Kubernetes Engine to help manage the CI/CD pipeline for applications.",
       date: "2025-08-29",
       readTime: "2 Jam",
       tags: ["AWS", "GCP", "Jenkins", "Kubernetes", "DevOps", "Cloud"],
       links: [
-        { platform: 'medium', url: 'https://medium.com/@rouf08412/setup-jenkins-with-kubernetes-engine-4f647cc24db6' }
-      ]
+        {
+          platform: "medium",
+          url: "https://medium.com/@rouf08412/setup-jenkins-with-kubernetes-engine-4f647cc24db6",
+        },
+      ],
     },
     {
       title: "Hands On Kubernetes Labs",
-      excerpt: "A project I designed for my documentation while learning Kubernetes through a series of neatly organized labs.",
+      excerpt:
+        "A project I designed for my documentation while learning Kubernetes through a series of neatly organized labs.",
       date: "2025-09-01",
       readTime: "8 Jam",
       tags: ["Kubernetes", "DevOps", "Cloud"],
       links: [
-        { platform: 'github', url: 'https://github.com/MochamadAbdulRouf/Hands-on-Kubernetes-Labs' }
-      ]
+        {
+          platform: "github",
+          url: "https://github.com/MochamadAbdulRouf/Hands-on-Kubernetes-Labs",
+        },
+      ],
     },
     {
       title: "Hands On IAC with Terraform: AWS & GCP",
-      excerpt: "A project I designed for my documentation while learning Infrastructure as Code (IaC) using Terraform on AWS and GCP.",
+      excerpt:
+        "A project I designed for my documentation while learning Infrastructure as Code (IaC) using Terraform on AWS and GCP.",
       date: "2025-05-01",
       readTime: "8 Jam",
       tags: ["Terraform", "DevOps", "Cloud"],
       links: [
-        { platform: 'github', url: 'https://github.com/MochamadAbdulRouf/Terraform-AWS-GCP-IAC' }
-      ]
+        {
+          platform: "github",
+          url: "https://github.com/MochamadAbdulRouf/Terraform-AWS-GCP-IAC",
+        },
+      ],
     },
     {
       title: "Hands On Ansible Labs",
-      excerpt: "A project I designed for my documentation while learning Ansible through a series of neatly organized labs.",
+      excerpt:
+        "A project I designed for my documentation while learning Ansible through a series of neatly organized labs.",
       date: "2025-05-20",
       readTime: "8 Jam",
       tags: ["Ansible", "DevOps", "Infrastructure"],
       links: [
-        { platform: 'github', url: 'https://github.com/MochamadAbdulRouf/Hands-on-Ansible-Labs' },
-        { platform: 'blogger', url: 'https://mochabdulrouf.blogspot.com/2025/05/write-up-learning-ansible.html' }
-      ]
+        {
+          platform: "github",
+          url: "https://github.com/MochamadAbdulRouf/Hands-on-Ansible-Labs",
+        },
+        {
+          platform: "blogger",
+          url: "https://mochabdulrouf.blogspot.com/2025/05/write-up-learning-ansible.html",
+        },
+      ],
     },
     {
       title: "Hands On Docker Labs",
-      excerpt: "A project I designed for my documentation while learning Docker through a series of neatly organized labs.",
+      excerpt:
+        "A project I designed for my documentation while learning Docker through a series of neatly organized labs.",
       date: "2025-03-01",
       readTime: "8 Jam",
       tags: ["Docker", "DevOps", "Containerization"],
       links: [
-        { platform: 'github', url: 'https://github.com/MochamadAbdulRouf/Hands-on-Docker-Labs' },
-        { platform: 'blogger', url: 'https://mochabdulrouf.blogspot.com/2025/03/write-up-task-and-learning-adinusa.html' }
-      ]
+        {
+          platform: "github",
+          url: "https://github.com/MochamadAbdulRouf/Hands-on-Docker-Labs",
+        },
+        {
+          platform: "blogger",
+          url: "https://mochabdulrouf.blogspot.com/2025/03/write-up-task-and-learning-adinusa.html",
+        },
+      ],
     },
     {
       title: "Write Up Jenkins CI/CD",
-      excerpt: "A comprehensive write-up about Jenkins CI/CD covering installation, pipeline configuration, and best practices for software delivery automation.",
+      excerpt:
+        "A comprehensive write-up about Jenkins CI/CD covering installation, pipeline configuration, and best practices for software delivery automation.",
       date: "2025-04-01",
       readTime: "8 Jam",
       tags: ["Jenkins", "DevOps", "CI/CD"],
       links: [
-        { platform: 'github', url: 'https://github.com/MochamadAbdulRouf/Learn-Jenkins-Pipeline' },
-        { platform: 'blogger', url: 'https://mochabdulrouf.blogspot.com/2025/11/write-up-jenkins.html' }
-      ]
+        {
+          platform: "github",
+          url: "https://github.com/MochamadAbdulRouf/Learn-Jenkins-Pipeline",
+        },
+        {
+          platform: "blogger",
+          url: "https://mochabdulrouf.blogspot.com/2025/11/write-up-jenkins.html",
+        },
+      ],
     },
     {
       title: "Terraform on AWS: Hands On Labs",
-      excerpt: "Terraform hands-on labs designed to learn how to use Terraform to automatically manage AWS infrastructure.",
+      excerpt:
+        "Terraform hands-on labs designed to learn how to use Terraform to automatically manage AWS infrastructure.",
       date: "2025-02-01",
       readTime: "8 Jam",
       tags: ["Terraform", "DevOps", "Infrastructure as Code"],
       links: [
-        { platform: 'github', url: 'https://github.com/MochamadAbdulRouf/Terraform-AWS' }
-      ]
+        {
+          platform: "github",
+          url: "https://github.com/MochamadAbdulRouf/Terraform-AWS",
+        },
+      ],
     },
     {
       title: "Write Up Gitlab CI/CD",
-      excerpt: "Gitlab is one of the most popular DevOps tools used to manage source code repositories and automate CI/CD processes.",
+      excerpt:
+        "Gitlab is one of the most popular DevOps tools used to manage source code repositories and automate CI/CD processes.",
       date: "2025-07-01",
       readTime: "8 Jam",
       tags: ["Gitlab", "DevOps", "CI/CD"],
       links: [
-        { platform: 'blogger', url: 'https://mochabdulrouf.blogspot.com/2025/11/hands-on-gitlab.html' }
-      ]
+        {
+          platform: "blogger",
+          url: "https://mochabdulrouf.blogspot.com/2025/11/hands-on-gitlab.html",
+        },
+      ],
     },
     {
       title: "Write Timeline Cloud DevOps AWS",
-      excerpt: "Creating a timeline for learning Cloud DevOps over one semester with my friends at the SMKN 1 NGLEGOK IT Community (KITS).",
+      excerpt:
+        "Creating a timeline for learning Cloud DevOps over one semester with my friends at the SMKN 1 NGLEGOK IT Community (KITS).",
       date: "2025-06-01",
       readTime: "8 Jam",
       tags: ["AWS", "DevOps", "Cloud"],
       links: [
-        { platform: 'drive', url: 'https://docs.google.com/spreadsheets/d/1CI6FFcBmYqcSwVzNufGSz6hgb-z9PX5aseI7ZI3KoCo/edit?usp=sharing' }
-      ]
+        {
+          platform: "drive",
+          url: "https://docs.google.com/spreadsheets/d/1CI6FFcBmYqcSwVzNufGSz6hgb-z9PX5aseI7ZI3KoCo/edit?usp=sharing",
+        },
+      ],
     },
     {
       title: "Implementation of WireGuard VPN and Tailscale",
-      excerpt: "Implementation of WireGuard VPN and TailScale to secure network connections and create a secure and fast VPN.",
+      excerpt:
+        "Implementation of WireGuard VPN and TailScale to secure network connections and create a secure and fast VPN.",
       date: "2025-08-10",
       readTime: "2 Jam",
       tags: ["VPN", "Wireguard", "Tailscale"],
       links: [
-        { platform: 'blogger', url: 'https://mochabdulrouf.blogspot.com/2025/11/wireguard-and-tail-scale.html' }
-      ]
+        {
+          platform: "blogger",
+          url: "https://mochabdulrouf.blogspot.com/2025/11/wireguard-and-tail-scale.html",
+        },
+      ],
     },
     {
       title: "Cloud Logging on Kubernetes",
-      excerpt: "Cloud Logging can be used aggregate logs from all Google Cloud resources, as well as any custom resources on other platforms, to allow for one centralized store for all logs and metrics.",
+      excerpt:
+        "Cloud Logging can be used aggregate logs from all Google Cloud resources, as well as any custom resources on other platforms, to allow for one centralized store for all logs and metrics.",
       date: "2025-12-02",
       readTime: "2 Jam",
       tags: ["GCP", "Terraform", "Kubernetes", "DevOps", "Cloud"],
       links: [
-        { platform: 'medium', url: 'https://medium.com/@rouf08412/cloud-logging-on-kubernetes-4aa0bc8ff98f' }
-      ]
+        {
+          platform: "medium",
+          url: "https://medium.com/@rouf08412/cloud-logging-on-kubernetes-4aa0bc8ff98f",
+        },
+      ],
     },
     {
       title: "Deploy Kubernetes Load Balancer Service with Terraform",
-      excerpt: "In Terraform, a Provider is the logical abstraction of an upstream API. This lab will show you how to set up a Kubernetes cluster and deploy Load Balancer type NGINX service on it.",
+      excerpt:
+        "In Terraform, a Provider is the logical abstraction of an upstream API. This lab will show you how to set up a Kubernetes cluster and deploy Load Balancer type NGINX service on it.",
       date: "2025-12-02",
       readTime: "2 Jam",
       tags: ["GCP", "Terraform", "Kubernetes", "DevOps", "Cloud"],
       links: [
-        { platform: 'medium', url: 'https://medium.com/@rouf08412/deploy-kubernetes-load-balancer-service-with-terraform-47ee1966b2ce' }
-      ]
+        {
+          platform: "medium",
+          url: "https://medium.com/@rouf08412/deploy-kubernetes-load-balancer-service-with-terraform-47ee1966b2ce",
+        },
+      ],
     },
     {
       title: "Configuring Network Connectivity Center as a Transit Hub",
-      excerpt: "A hub is a global Google Cloud resource that supports multiple attached spokes. It provides a simple way to connect spokes together to enable data transfer across them.",
+      excerpt:
+        "A hub is a global Google Cloud resource that supports multiple attached spokes. It provides a simple way to connect spokes together to enable data transfer across them.",
       date: "2025-12-05",
       readTime: "2 Jam",
       tags: ["GCP", "VPC", "Networking", "DevOps", "Cloud"],
       links: [
-        { platform: 'medium', url: 'https://medium.com/@rouf08412/configuring-network-connectivity-center-as-a-transit-hub-b66246e8c291' }
-      ]
+        {
+          platform: "medium",
+          url: "https://medium.com/@rouf08412/configuring-network-connectivity-center-as-a-transit-hub-b66246e8c291",
+        },
+      ],
     },
     {
       title: "VPC Networking: Cloud HA-VPN (Google Cloud Platform)",
-      excerpt: "For this lab, I will set up two VPCs and add a cloud HA-VPN gateway in each. I will run two tunnels from each VPN gateway to demonstrate the HA-VPN gateway configuration for 99.99% SLA.",
+      excerpt:
+        "For this lab, I will set up two VPCs and add a cloud HA-VPN gateway in each. I will run two tunnels from each VPN gateway to demonstrate the HA-VPN gateway configuration for 99.99% SLA.",
       date: "2025-12-05",
       readTime: "2 Jam",
       tags: ["GCP", "VPC", "Networking", "DevOps", "Cloud"],
       links: [
-        { platform: 'medium', url: 'https://medium.com/@rouf08412/vpc-networking-cloud-ha-vpn-google-cloud-platform-65ab643b6b85' }
-      ]
+        {
+          platform: "medium",
+          url: "https://medium.com/@rouf08412/vpc-networking-cloud-ha-vpn-google-cloud-platform-65ab643b6b85",
+        },
+      ],
     },
     {
       title: "How to Use a Network Policy on Google Kubernetes Engine (GKE)",
-      excerpt: "This lab will show you how to improve the security of your Kubernetes Engine by applying fine-grained restrictions to network communication.",
+      excerpt:
+        "This lab will show you how to improve the security of your Kubernetes Engine by applying fine-grained restrictions to network communication.",
       date: "2025-12-07",
       readTime: "2 Jam",
       tags: ["GCP", "Kubernetes", "Networking", "DevOps", "Cloud"],
       links: [
-        { platform: 'medium', url: 'https://medium.com/@rouf08412/how-to-use-a-network-policy-on-google-kubernetes-engine-e66912a7e5e5' }
-      ]
+        {
+          platform: "medium",
+          url: "https://medium.com/@rouf08412/how-to-use-a-network-policy-on-google-kubernetes-engine-e66912a7e5e5",
+        },
+      ],
+    },
+    {
+      title: "CKAD: Certified Kubernetes Application Developer",
+      excerpt:
+        "Learning how to approach the CKAD exam. Scenario-based questions are designed to be realistic and similar to real-world situations, in order to accelerate the goal of becoming a Certified Kubernetes Application Developer. I took the material from studying a course on Udemy.",
+      date: "2026-02-06",
+      readTime: "2 Jam",
+      tags: ["GCP", "Kubernetes", "DevOps", "Cloud"],
+      links: [
+        {
+          platform: "github",
+          url: "https://github.com/MochamadAbdulRouf/CKAD.git",
+        },
+      ],
     },
   ];
-
-
 
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString("en-US", {
@@ -264,14 +377,15 @@ const PostsSection = () => {
             Blog Posts
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Insights and tutorials on DevOps practices, cloud technologies, and infrastructure automation
+            Insights and tutorials on DevOps practices, cloud technologies, and
+            infrastructure automation
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {posts.map((post, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 animate-fade-in flex flex-col"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
@@ -304,82 +418,90 @@ const PostsSection = () => {
               </CardContent>
               <CardFooter>
                 <div className="flex flex-wrap gap-2">
-                {/* Cek apakah 'post.links' ada dan punya isi */}
-                {post.links && post.links.map((link, linkIndex) => {
-                  // Ambil detail (teks & ikon) dari 'linkDetails'
-                  const details = linkDetails[link.platform] || linkDetails.default;
-                  const { Icon } = details; // Ambil komponen Ikon
-                    // Render satu tombol untuk setiap link
-                    return (
-                      <Button 
-                       
-                        key={linkIndex} 
-                        variant="ghost" 
-                        size="sm" 
-                        className="group" // Hapus 'w-full'
-                        asChild>
-
-                        <a 
-                        href={link.url} // <-- URL dinamis
-                        target="_blank"
-                        rel="noopener noreferrer"
+                  {/* Cek apakah 'post.links' ada dan punya isi */}
+                  {post.links &&
+                    post.links.map((link, linkIndex) => {
+                      // Ambil detail (teks & ikon) dari 'linkDetails'
+                      const details =
+                        linkDetails[link.platform] || linkDetails.default;
+                      const { Icon } = details; // Ambil komponen Ikon
+                      // Render satu tombol untuk setiap link
+                      return (
+                        <Button
+                          key={linkIndex}
+                          variant="ghost"
+                          size="sm"
+                          className="group" // Hapus 'w-full'
+                          asChild
                         >
-                        {details.text} {/* <-- Teks dinamis */}
-                        <Icon className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                        </a>
-
-                      </Button>
-                    );
-                  })}
+                          <a
+                            href={link.url} // <-- URL dinamis
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {details.text} {/* <-- Teks dinamis */}
+                            <Icon className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                          </a>
+                        </Button>
+                      );
+                    })}
                 </div>
               </CardFooter>
             </Card>
           ))}
         </div>
         <div className="text-center mt-16 border-t pt-12">
-        <h3 className="text-2xl font-semibold mb-6">
-          Find All My Writings
-        </h3>
-        <div className="flex justify-center gap-4 flex-wrap">
-
-          {/* Tombol 1: MEDIUM */}
-          <Button size="lg" asChild className="gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/50">
-            <a 
-              href="https://medium.com/@rouf08412" // <-- GANTI DENGAN LINK PROFIL ANDA
-              target="_blank" 
-              rel="noopener noreferrer"
+          <h3 className="text-2xl font-semibold mb-6">Find All My Writings</h3>
+          <div className="flex justify-center gap-4 flex-wrap">
+            {/* Tombol 1: MEDIUM */}
+            <Button
+              size="lg"
+              asChild
+              className="gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/50"
             >
-              <FileText className="mr-2 h-5 w-5" />
-              My Medium Profile
-            </a>
-          </Button>
+              <a
+                href="https://medium.com/@rouf08412" // <-- GANTI DENGAN LINK PROFIL ANDA
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FileText className="mr-2 h-5 w-5" />
+                My Medium Profile
+              </a>
+            </Button>
 
-          {/* Tombol 2: GITHUB (Contoh) */}
-          <Button size="lg" asChild className="gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/50">
-            <a 
-              href="https://github.com/MochamadAbdulRouf" // <-- GANTI DENGAN LINK PROFIL ANDA
-              target="_blank" 
-              rel="noopener noreferrer"
+            {/* Tombol 2: GITHUB (Contoh) */}
+            <Button
+              size="lg"
+              asChild
+              className="gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/50"
             >
-              <Github className="mr-2 h-5 w-5" />
-              My GitHub Profile
-            </a>
-          </Button>
+              <a
+                href="https://github.com/MochamadAbdulRouf" // <-- GANTI DENGAN LINK PROFIL ANDA
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github className="mr-2 h-5 w-5" />
+                My GitHub Profile
+              </a>
+            </Button>
 
-          {/* Tombol 3: BLOGGER */}
-          <Button size="lg" asChild className="gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/50">
-            <a 
-              href="https://mochabdulrouf.blogspot.com/" // <-- GANTI DENGAN LINK PROFIL ANDA
-              target="_blank" 
-              rel="noopener noreferrer"
+            {/* Tombol 3: BLOGGER */}
+            <Button
+              size="lg"
+              asChild
+              className="gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/50"
             >
-              <BookOpen className="mr-2 h-5 w-5" />
-              My Blogger Profile
-            </a>
-          </Button>
-
+              <a
+                href="https://mochabdulrouf.blogspot.com/" // <-- GANTI DENGAN LINK PROFIL ANDA
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <BookOpen className="mr-2 h-5 w-5" />
+                My Blogger Profile
+              </a>
+            </Button>
+          </div>
         </div>
-      </div>
       </div>
     </section>
   );
