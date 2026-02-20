@@ -1,16 +1,45 @@
-import { Linkedin, Github, Instagram, Mail, BookOpen, FileText, Download, Boxes } from "lucide-react";
+import {
+  Linkedin,
+  Github,
+  Instagram,
+  Mail,
+  BookOpen,
+  FileText,
+  Download,
+  Boxes,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import avatarImage from "@/assets/me.jpg";
 
 const HeroSection = () => {
   const socialLinks = [
-    { icon: Linkedin, href: "https://www.linkedin.com/in/mochabdulrouf/", label: "LinkedIn" },
-    { icon: Instagram, href: "https://www.instagram.com/mochabdlrouf/", label: "Instagram" },
-    { icon: Github, href: "https://github.com/MochamadAbdulRouf", label: "GitHub" },
-    { icon: Boxes, href: "https://hub.docker.com/u/mochabdulrouf", label: "Docker Hub" },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/mochabdulrouf/",
+      label: "LinkedIn",
+    },
+    {
+      icon: Instagram,
+      href: "https://www.instagram.com/mochabdlrouf/",
+      label: "Instagram",
+    },
+    {
+      icon: Github,
+      href: "https://github.com/MochamadAbdulRouf",
+      label: "GitHub",
+    },
+    {
+      icon: Boxes,
+      href: "https://hub.docker.com/u/mochabdulrouf",
+      label: "Docker Hub",
+    },
     { icon: Mail, href: "mailto:mochamadabdulrouf1@gmail.com", label: "Email" },
     { icon: FileText, href: "https://medium.com/@rouf08412", label: "Medium" },
-    { icon: BookOpen, href: "https://mochabdulrouf.blogspot.com/", label: "Blogger" },
+    {
+      icon: BookOpen,
+      href: "https://mochabdulrouf.blogspot.com/",
+      label: "Blogger",
+    },
   ];
 
   const expertise = [
@@ -31,7 +60,7 @@ const HeroSection = () => {
             <h1 className="text-5xl md:text-7xl font-bold text-foreground leading-tight">
               Hello, I'm Rouf.
             </h1>
-            
+
             <div className="text-xl md:text-2xl">
               <span className="bg-accent text-accent-foreground px-3 py-1 rounded font-semibold">
                 Fresh Graduate
@@ -42,14 +71,20 @@ const HeroSection = () => {
             </div>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I am passionate about cloud infrastructure, automation, and server administration.
+              I am passionate about cloud infrastructure, automation, and server
+              administration.
             </p>
 
             <div className="space-y-3">
-              <h3 className="text-lg font-semibold text-foreground">Expertise in:</h3>
+              <h3 className="text-lg font-semibold text-foreground">
+                Expertise in:
+              </h3>
               <ul className="space-y-2">
                 {expertise.map((skill, index) => (
-                  <li key={index} className="flex items-start text-muted-foreground">
+                  <li
+                    key={index}
+                    className="flex items-start text-muted-foreground"
+                  >
                     <span className="text-accent mr-2">▪</span>
                     <span>{skill}</span>
                   </li>
@@ -64,7 +99,7 @@ const HeroSection = () => {
                 className="gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/50"
               >
                 <a
-                  href="https://drive.google.com/file/d/1WibicNYyreZtrDQFLQwxFGIaf9l28ZjT/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1fHMqZvUqsXKzGfjOrSZNSpkB4ikDrHBy/view?usp=sharing"
                   download
                   target="_blank"
                   rel="noopener noreferrer"
