@@ -29,18 +29,34 @@ const About = () => {
           </h1>
           <div className="prose prose-lg dark:prose-invert">
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              I'm Mochamad Abdul Rouf, a Fresh Graduate specializing in DevOps and Cloud Infrastructure. 
-              I am passionate about building scalable, reliable, and automated systems.
+              I'm Mochamad Abdul Rouf, a Fresh Graduate specializing in DevOps
+              and Cloud Infrastructure. I am passionate about building scalable,
+              reliable, and automated systems.
             </p>
-            <h2 className="text-2xl font-bold text-foreground mt-8 mb-6">Experience</h2>
-            
+            <h2 className="text-2xl font-bold text-foreground mt-8 mb-6">
+              Experience
+            </h2>
+
             {/* Experience Timeline - Tambahkan experience baru di array ini */}
             <div className="relative mb-8">
               {/* Timeline line */}
               <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-transparent" />
-              
+
               <div className="space-y-8">
                 {[
+                  {
+                    company: "Aguna Course",
+                    role: "Assitant Trainer Web Programming",
+                    period: "Dec 2025 - Present",
+                    location: "East Java, Indonesia",
+                    description: [
+                      "Assisted participants with project-based web development tasks, troubleshooting and resolving code errors in Next.js and Express.",
+                      "Handled 8 live training sessions, ensuring sessions ran smoothly and participants remained engaged.",
+                      "Followed up on assignments and tasks from live sessions to support participant progress and completion.",
+                      "Coordinated with trainers and instructors to resolve participant issues and manage participant-related data.",
+                      "Responded to participants’ technical questions via WhatsApp and provided hands-on guidance during training sessions to support deeper technical understanding.",
+                    ],
+                  },
                   {
                     company: "Jago Web Hosting Indonesia",
                     role: "Wordpress Developer",
@@ -62,12 +78,14 @@ const About = () => {
                     <div className="absolute left-0 top-1 w-8 h-8 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center">
                       <div className="w-3 h-3 rounded-full bg-primary" />
                     </div>
-                    
+
                     {/* Content */}
                     <div className="pb-2">
                       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-2">
                         <div>
-                          <h3 className="text-xl font-semibold text-foreground">{exp.company}</h3>
+                          <h3 className="text-xl font-semibold text-foreground">
+                            {exp.company}
+                          </h3>
                           <p className="text-primary font-medium">{exp.role}</p>
                         </div>
                         <div className="text-sm text-muted-foreground sm:text-right">
@@ -89,63 +107,141 @@ const About = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">My Journey</h2>
+            <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">
+              My Journey
+            </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Throughout my academic journey and hands-on projects, I've developed a strong foundation in 
-              cloud technologies, container orchestration, and infrastructure automation. I believe in 
-              continuous learning and staying updated with the latest DevOps practices.
+              Throughout my academic journey and hands-on projects, I've
+              developed a strong foundation in cloud technologies, container
+              orchestration, and infrastructure automation. I believe in
+              continuous learning and staying updated with the latest DevOps
+              practices.
             </p>
-            <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Skills & Tech Stack</h2>
-            
+            <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">
+              Skills & Tech Stack
+            </h2>
+
             {/* Tech Stack Icons Grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 my-8">
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <img src={linuxLogo} alt="Linux Server" className="h-12 w-12 object-contain" />
-                <span className="text-sm font-medium text-foreground">Linux Server</span>
+                <img
+                  src={linuxLogo}
+                  alt="Linux Server"
+                  className="h-12 w-12 object-contain"
+                />
+                <span className="text-sm font-medium text-foreground">
+                  Linux Server
+                </span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <img src={kubeLogo} alt="Kubernetes" className="h-12 w-12 object-contain" />
-                <span className="text-sm font-medium text-foreground">Kubernetes</span>
+                <img
+                  src={kubeLogo}
+                  alt="Kubernetes"
+                  className="h-12 w-12 object-contain"
+                />
+                <span className="text-sm font-medium text-foreground">
+                  Kubernetes
+                </span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <img src={awsLogo} alt="Cloud (GCP/AWS)" className="h-12 w-12 object-contain" />
-                <span className="text-sm font-medium text-foreground text-center">AWS (Amazon Web Service)</span>
+                <img
+                  src={awsLogo}
+                  alt="Cloud (GCP/AWS)"
+                  className="h-12 w-12 object-contain"
+                />
+                <span className="text-sm font-medium text-foreground text-center">
+                  AWS (Amazon Web Service)
+                </span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <img src={gcpLogo} alt="Cloud (GCP/AWS)" className="h-12 w-12 object-contain" />
-                <span className="text-sm font-medium text-foreground text-center">GCP (Google Cloud Platform)</span>
+                <img
+                  src={gcpLogo}
+                  alt="Cloud (GCP/AWS)"
+                  className="h-12 w-12 object-contain"
+                />
+                <span className="text-sm font-medium text-foreground text-center">
+                  GCP (Google Cloud Platform)
+                </span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <img src={dockerLogo} alt="Docker" className="h-12 w-12 object-contain" />
-                <span className="text-sm font-medium text-foreground">Docker</span>
+                <img
+                  src={dockerLogo}
+                  alt="Docker"
+                  className="h-12 w-12 object-contain"
+                />
+                <span className="text-sm font-medium text-foreground">
+                  Docker
+                </span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <img src={jenkinsLogo} alt="CI/CD" className="h-12 w-12 object-contain" />
-                <span className="text-sm font-medium text-foreground">Jenkins</span>
+                <img
+                  src={jenkinsLogo}
+                  alt="CI/CD"
+                  className="h-12 w-12 object-contain"
+                />
+                <span className="text-sm font-medium text-foreground">
+                  Jenkins
+                </span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <img src={githubActionLogo} alt="CI/CD" className="h-12 w-12 object-contain" />
-                <span className="text-sm font-medium text-foreground">Github Action</span>
+                <img
+                  src={githubActionLogo}
+                  alt="CI/CD"
+                  className="h-12 w-12 object-contain"
+                />
+                <span className="text-sm font-medium text-foreground">
+                  Github Action
+                </span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <img src={terraformLogo} alt="CI/CD" className="h-12 w-12 object-contain" />
-                <span className="text-sm font-medium text-foreground">Terraform</span>
+                <img
+                  src={terraformLogo}
+                  alt="CI/CD"
+                  className="h-12 w-12 object-contain"
+                />
+                <span className="text-sm font-medium text-foreground">
+                  Terraform
+                </span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <img src={ansibleLogo} alt="IaC (Terraform, Ansible)" className="h-12 w-12 object-contain" />
-                <span className="text-sm font-medium text-foreground">Ansible</span>
+                <img
+                  src={ansibleLogo}
+                  alt="IaC (Terraform, Ansible)"
+                  className="h-12 w-12 object-contain"
+                />
+                <span className="text-sm font-medium text-foreground">
+                  Ansible
+                </span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <img src={prometheusLogo} alt="Prometheus" className="h-12 w-12 object-contain" />
-                <span className="text-sm font-medium text-foreground">Prometheus</span>
+                <img
+                  src={prometheusLogo}
+                  alt="Prometheus"
+                  className="h-12 w-12 object-contain"
+                />
+                <span className="text-sm font-medium text-foreground">
+                  Prometheus
+                </span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <img src={grafanaLogo} alt="Grafana" className="h-12 w-12 object-contain" />
-                <span className="text-sm font-medium text-foreground">Grafana</span>
+                <img
+                  src={grafanaLogo}
+                  alt="Grafana"
+                  className="h-12 w-12 object-contain"
+                />
+                <span className="text-sm font-medium text-foreground">
+                  Grafana
+                </span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <img src={bashlogo} alt="BashScript" className="h-12 w-12 object-contain" />
-                <span className="text-sm font-medium text-foreground">Bash Scripting</span>
+                <img
+                  src={bashlogo}
+                  alt="BashScript"
+                  className="h-12 w-12 object-contain"
+                />
+                <span className="text-sm font-medium text-foreground">
+                  Bash Scripting
+                </span>
               </div>
             </div>
 
@@ -158,7 +254,7 @@ const About = () => {
               <li>• Infrastructure as Code (Terraform, Ansible)</li>
               <li>• Monitoring & Observability (Prometheus, Grafana)</li>
             </ul>
-            
+
             {/* Navigation Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mt-12 pt-8 border-t border-border">
               <Link to="/projects" className="flex-1">
@@ -175,10 +271,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Footer />  
+      <Footer />
     </div>
-    
-    
   );
 };
 
