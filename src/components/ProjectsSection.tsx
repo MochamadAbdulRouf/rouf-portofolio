@@ -166,6 +166,14 @@ const ProjectsSection = () => {
       github:
         "https://github.com/MochamadAbdulRouf/grafana-loki-promtail-stack.git",
     },
+    {
+      title: "AWS VPC Application Design",
+      description:
+        "To design a VPC, the first thing you should have is an application and its infrastructure requirements, We will take example of an application and its requirements to design the VPC network.",
+      techStack: ["AWS", "VPC", "NACL", "Terraform"],
+      github:
+        "https://github.com/MochamadAbdulRouf/aws-vpc-application-design.git",
+    },
   ];
 
   return (
