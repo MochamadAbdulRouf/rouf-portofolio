@@ -177,7 +177,7 @@ const ProjectsSection = () => {
     {
       title: "Setup Pritunl on AWS EC2 Instances",
       description:
-        "Pritunl is an open-source enterprise VPN server that supports OpenVPN, IPsec, and WireGuard protocols.",
+        "Pritunl is an open-source enterprise VPN server that supports OpenVPN, IPsec, and WireGuard protocols",
       techStack: ["VPN", "Pritunl", "AWS", "Packer"],
       github:
         "https://github.com/MochamadAbdulRouf/setup-pritunl-vpn-on-AWS-EC2.git",
