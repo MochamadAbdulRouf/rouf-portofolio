@@ -182,6 +182,13 @@ const ProjectsSection = () => {
       github:
         "https://github.com/MochamadAbdulRouf/setup-pritunl-vpn-on-AWS-EC2.git",
     },
+    {
+      title: "Microservice Dev Dash",
+      description:
+        "Build architecture automation pipeline for Microservice Application",
+      techStack: ["Kubernetes", "ArgoCD", "Pipeline", "AWS", "Github Action"],
+      github: "https://github.com/MochamadAbdulRouf/microservice-dev-dash.git",
+    },
   ];
 
   return (
