@@ -202,7 +202,8 @@ const ProjectsSection = () => {
         "Gmail",
         "Jenkins",
       ],
-      github: "https://github.com/MochamadAbdulRouf/microservice-dev-dash.git",
+      github:
+        "https://github.com/MochamadAbdulRouf/DevSecOps-Netflix-Clone.git",
     },
   ];
 
