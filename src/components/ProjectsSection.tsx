@@ -183,10 +183,25 @@ const ProjectsSection = () => {
         "https://github.com/MochamadAbdulRouf/setup-pritunl-vpn-on-AWS-EC2.git",
     },
     {
-      title: "Microservice Dev Dash",
+      title: "Microservice DevDash",
       description:
         "Build architecture automation pipeline for Microservice Application",
       techStack: ["Kubernetes", "ArgoCD", "Pipeline", "AWS", "Github Action"],
+      github: "https://github.com/MochamadAbdulRouf/microservice-dev-dash.git",
+    },
+    {
+      title: "DevSecOps Netflix Clone",
+      description:
+        "Build architecture DevSecOps project to start adopting secure deployment practice",
+      techStack: [
+        "Kubernetes",
+        "Docker",
+        "OWASP",
+        "Trivy",
+        "Pipeline",
+        "Gmail",
+        "Jenkins",
+      ],
       github: "https://github.com/MochamadAbdulRouf/microservice-dev-dash.git",
     },
   ];
